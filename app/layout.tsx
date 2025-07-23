@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://techflowsolutions.com",
+    url: "https://lifestyleerp.com",
     title: "LifestyleERP - Enterprise Software & Digital Solutions",
     description:
       "Transform your business with our comprehensive ERP systems, cybersecurity solutions, and digital marketing services tailored for modern enterprises.",
@@ -47,7 +47,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#2563eb" />
+        <meta name="theme-color" content="#7a0606ff" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -281,8 +281,339 @@ export default function HomePage() {
         </div>
       </section>
 
+       {/* ERP Modules Section */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20">ERP Modules</Badge>
+            <h2 className="text-4xl font-bold mb-4 text-white">Complete ERP System Modules</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Comprehensive business management modules designed for seamless integration and maximum efficiency
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Module 1: Inventory Management */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:shadow-lg hover:shadow-cyan-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-cyan-500/25">
+                    <Package className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">1. Inventory Management System</CardTitle>
+                    <CardDescription className="text-cyan-400">Easy Stock Management</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Manage Multiple Inventory
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Barcode & Label Printing
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Product Attributes Setup
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Product Category Setup
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Unlimited Product or Item
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Multiple Product Attribute
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Bulk Product Import
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    Product Sourcing Panel
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 2: Point of Sales */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-green-500/20 hover:border-green-500/40 transition-all hover:shadow-lg hover:shadow-green-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-green-500/25">
+                    <CreditCard className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">2. Point of Sales (POS)</CardTitle>
+                    <CardDescription className="text-green-400">Invoicing or Billing System</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Single Invoice Multiple Measurement System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Integrated CRM for Customer Filtering or Searching
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Dynamic Processing Status and Tracking System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" />
+                    Dynamic Discount, Coupon System
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 3: Supplier/Vendor Management */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-purple-500/20 hover:border-purple-500/40 transition-all hover:shadow-lg hover:shadow-purple-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-purple-500/25">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">3. Supplier/Vendor Management</CardTitle>
+                    <CardDescription className="text-purple-400">Vendor/Supplier Master Database</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-purple-400 mr-3 flex-shrink-0" />
+                    Supplier Entry Form
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-purple-400 mr-3 flex-shrink-0" />
+                    Supplier Activation and Status System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-purple-400 mr-3 flex-shrink-0" />
+                    Powerful Searching and Filtering System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-purple-400 mr-3 flex-shrink-0" />
+                    Debit Supplier Management System
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 4: Customer Management */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-orange-500/20 hover:border-orange-500/40 transition-all hover:shadow-lg hover:shadow-orange-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-orange-500/25">
+                    <UserCheck className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">4. Customer Management</CardTitle>
+                    <CardDescription className="text-orange-400">Customer Entry Form</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" />
+                    Customer Activation and Status System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" />
+                    Powerful Searching and Filtering System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" />
+                    Customer Wise Coupon System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" />
+                    Credit Customer Management System
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 5: HRM and Payroll */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-indigo-500/20 hover:border-indigo-500/40 transition-all hover:shadow-lg hover:shadow-indigo-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-indigo-500/25">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">
+                      5. Human Resources Management (HRM) and Payroll
+                    </CardTitle>
+                    <CardDescription className="text-indigo-400">Employee Database</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-indigo-400 mr-3 flex-shrink-0" />
+                    Create New Department, Designation & Employee
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-indigo-400 mr-3 flex-shrink-0" />
+                    Employee File Management
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-indigo-400 mr-3 flex-shrink-0" />
+                    Employee Termination Panel
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-indigo-400 mr-3 flex-shrink-0" />
+                    Notification, SMS, Mailing System
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 6: Accounting Management */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-teal-500/20 hover:border-teal-500/40 transition-all hover:shadow-lg hover:shadow-teal-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-teal-500/25">
+                    <BarChart3 className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">6. Accounting Management System</CardTitle>
+                    <CardDescription className="text-teal-400">3 Layers Chart of Accounts</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Mapping of Chart of Accounts
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Loan Management System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Add Unlimited Chart of Accounts Head
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-teal-400 mr-3 flex-shrink-0" />
+                    Chart of Accounts Wise Ledger
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 7: Reporting Module */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-yellow-500/20 hover:border-yellow-500/40 transition-all hover:shadow-lg hover:shadow-yellow-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-yellow-500/25">
+                    <FileText className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">7. Reporting Module</CardTitle>
+                    <CardDescription className="text-yellow-400">Sales Report</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Product Entry Report
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Due Report
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Due Collection Dynamic Report
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Sold Product Report
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Stock Report
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-yellow-400 mr-3 flex-shrink-0" />
+                    Purchase Report
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Module 8: User Privilege and Management */}
+            <Card className="bg-gray-800/50 backdrop-blur border border-pink-500/20 hover:border-pink-500/40 transition-all hover:shadow-lg hover:shadow-pink-500/10">
+              <CardHeader>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-pink-500/25">
+                    <Lock className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-white">8. User Privilege and User Management</CardTitle>
+                    <CardDescription className="text-pink-400">Dynamic Office Settings</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-pink-400 mr-3 flex-shrink-0" />
+                    Department Management
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-pink-400 mr-3 flex-shrink-0" />
+                    Managing Multiple Warehouses
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-pink-400 mr-3 flex-shrink-0" />
+                    Dynamic User Access Control Panel and Privilege System
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-pink-400 mr-3 flex-shrink-0" />
+                    User Notification, SMS, Mailing System
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 shadow-lg shadow-cyan-500/25"
+            >
+              Explore All ERP Modules
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Cybersecurity Section */}
-      <section id="security" className="py-20 bg-gray-800/50">
+      {/* <section id="security" className="py-20 bg-gray-800/50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -346,10 +677,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Digital Marketing Section */}
-      <section id="marketing" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+      {/* <section id="marketing" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -420,7 +751,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-20 bg-gray-800/50">
