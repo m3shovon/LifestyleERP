@@ -31,31 +31,31 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-cyan-500/20">
+      <header className="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-red-500/20">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/25">
+              <div className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg shadow-red-500/25">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">
                 LifestyleERP
               </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#services" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              <Link href="#services" className="text-gray-300 hover:text-red-400 transition-colors">
                 Services
               </Link>
-              <Link href="#erp" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              <Link href="#erp" className="text-gray-300 hover:text-red-400 transition-colors">
                 ERP Systems
               </Link>
-              <Link href="#security" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              <Link href="#security" className="text-gray-300 hover:text-red-400 transition-colors">
                 Cybersecurity
               </Link>
-              <Link href="#marketing" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              <Link href="#marketing" className="text-gray-300 hover:text-red-400 transition-colors">
                 Digital Marketing
               </Link>
-              <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 shadow-lg shadow-cyan-500/25">
+              <Button className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg shadow-red-500/25">
                 Get Started
               </Button>
             </div>
@@ -69,10 +69,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.1),transparent_70%)]"></div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-cyan-500/10 text-cyan-400 border-cyan-500/20 hover:bg-cyan-500/20">
+            <Badge className="mb-6 bg-red-500/10 text-red-400 border-red-500/20 hover:bg-red-500/20">
               🚀 Next-Gen Enterprise Solutions
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-red-200 to-red-400 bg-clip-text text-transparent leading-tight">
               Future-Ready Business Solutions
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -82,7 +82,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-lg px-8 py-4 shadow-lg shadow-cyan-500/25"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-lg px-8 py-4 shadow-lg shadow-red-500/25 text-white"
               >
                 Launch Your Digital Transformation
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -90,18 +90,40 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 py-4 border-2 border-cyan-500/30 hover:bg-cyan-500/10 bg-transparent text-cyan-400 hover:text-cyan-300"
+                className="text-lg px-8 py-4 border-2 border-red-500/30 hover:bg-red-500/10 bg-transparent text-red-400 hover:text-red-300"
               >
                 Watch Tech Demo
+              </Button>
+              <Button
+                size="lg"
+                asChild
+                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 shadow-lg shadow-green-500/25"
+              >
+                <a
+                  href="https://wa.me/8801521430255?text=Hi%Lifestyleerp%20Solutions!%20I'm%20interested%20in%20your%20ERP%20systems%20and%20would%20like%20to%20know%20more."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <svg
+                    className="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                  </svg>
+                  Chat on WhatsApp
+                </a>
               </Button>
             </div>
           </div>
         </div>
 
         {/* Tech Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-red-500/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-red-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-red-400 rounded-full animate-ping"></div>
       </section>
 
       {/* Services Overview */}
@@ -115,9 +137,9 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-2 border border-gray-700 bg-gray-800/50 backdrop-blur">
+            <Card className="group hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 hover:-translate-y-2 border border-gray-700 bg-gray-800/50 backdrop-blur">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-cyan-500/25">
+                <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-red-500/25">
                   <Database className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl text-white">Enterprise ERP</CardTitle>
@@ -126,19 +148,19 @@ export default function HomePage() {
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-cyan-400 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-red-400 mr-3" />
                     Smart HRM & Payroll Automation
                   </li>
                   <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-cyan-400 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-red-400 mr-3" />
                     Advanced Financial Analytics
                   </li>
                   <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-cyan-400 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-red-400 mr-3" />
                     AI-Driven CRM & Insights
                   </li>
                   <li className="flex items-center text-gray-300">
-                    <CheckCircle className="w-5 h-5 text-cyan-400 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-red-400 mr-3" />
                     Next-Gen POS & Inventory
                   </li>
                 </ul>
@@ -212,7 +234,7 @@ export default function HomePage() {
       <section id="erp" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20">ERP Excellence</Badge>
+            <Badge className="mb-4 bg-red-500/10 text-red-400 border-red-500/20">ERP Excellence</Badge>
             <h2 className="text-4xl font-bold mb-4 text-white">Intelligent Business Ecosystem</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Revolutionary ERP platform engineered for fashion, retail, restaurant, and lifestyle enterprises
@@ -220,8 +242,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Card className="text-center p-6 hover:shadow-lg hover:shadow-cyan-500/10 transition-all bg-gray-800/50 backdrop-blur border border-gray-700">
-              <UserCheck className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
+            <Card className="text-center p-6 hover:shadow-lg hover:shadow-red-500/10 transition-all bg-gray-800/50 backdrop-blur border border-gray-700">
+              <UserCheck className="w-12 h-12 text-red-400 mx-auto mb-4" />
               <h3 className="font-semibold text-white mb-2">Smart HRM</h3>
               <p className="text-sm text-gray-400">AI-powered workforce management and analytics</p>
             </Card>
@@ -262,8 +284,8 @@ export default function HomePage() {
               <p className="text-sm text-gray-400">Cross-platform mobile management suite</p>
             </Card>
 
-            <Card className="text-center p-6 hover:shadow-lg hover:shadow-cyan-500/10 transition-all bg-gray-800/50 backdrop-blur border border-gray-700">
-              <Globe className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
+            <Card className="text-center p-6 hover:shadow-lg hover:shadow-red-500/10 transition-all bg-gray-800/50 backdrop-blur border border-gray-700">
+              <Globe className="w-12 h-12 text-red-400 mx-auto mb-4" />
               <h3 className="font-semibold text-white mb-2">Global Scale</h3>
               <p className="text-sm text-gray-400">Multi-location enterprise management</p>
             </Card>
@@ -272,7 +294,7 @@ export default function HomePage() {
           <div className="text-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 shadow-lg shadow-cyan-500/25"
+              className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg shadow-red-500/25"
             >
               Explore ERP Architecture
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -285,7 +307,7 @@ export default function HomePage() {
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20">ERP Modules</Badge>
+            <Badge className="mb-4 bg-red-500/10 text-red-400 border-red-500/20">ERP Modules</Badge>
             <h2 className="text-4xl font-bold mb-4 text-white">Complete ERP System Modules</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Comprehensive business management modules designed for seamless integration and maximum efficiency
@@ -294,50 +316,50 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Module 1: Inventory Management */}
-            <Card className="bg-gray-800/50 backdrop-blur border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:shadow-lg hover:shadow-cyan-500/10">
+            <Card className="bg-gray-800/50 backdrop-blur border border-red-500/20 hover:border-red-500/40 transition-all hover:shadow-lg hover:shadow-red-500/10">
               <CardHeader>
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-cyan-500/25">
+                  <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-red-500/25">
                     <Package className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <CardTitle className="text-xl text-white">1. Inventory Management System</CardTitle>
-                    <CardDescription className="text-cyan-400">Easy Stock Management</CardDescription>
+                    <CardDescription className="text-red-400">Easy Stock Management</CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Manage Multiple Inventory
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Barcode & Label Printing
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Product Attributes Setup
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Product Category Setup
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Unlimited Product or Item
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Multiple Product Attribute
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Bulk Product Import
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-cyan-400 mr-3 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-red-400 mr-3 flex-shrink-0" />
                     Product Sourcing Panel
                   </li>
                 </ul>
@@ -490,7 +512,7 @@ export default function HomePage() {
             <Card className="bg-gray-800/50 backdrop-blur border border-teal-500/20 hover:border-teal-500/40 transition-all hover:shadow-lg hover:shadow-teal-500/10">
               <CardHeader>
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-teal-500/25">
+                  <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-red-600 rounded-lg flex items-center justify-center mr-4 shadow-lg shadow-teal-500/25">
                     <BarChart3 className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -600,10 +622,10 @@ export default function HomePage() {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center  mt-12">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 shadow-lg shadow-cyan-500/25"
+              className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 shadow-lg shadow-red-500/25 text-white"
             >
               Explore All ERP Modules
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -765,8 +787,8 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-cyan-500/30">
-                <Star className="w-8 h-8 text-cyan-400" />
+              <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-500/30">
+                <Star className="w-8 h-8 text-red-400" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Tech Innovation</h3>
               <p className="text-gray-400">10+ years pioneering enterprise technology solutions</p>
@@ -803,7 +825,7 @@ export default function HomePage() {
       <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20">Get In Touch</Badge>
+            <Badge className="mb-4 bg-red-500/10 text-red-400 border-red-500/20">Get In Touch</Badge>
             <h2 className="text-4xl font-bold mb-4 text-white">Connect With Our Tech Experts</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to transform your business? Our team of technology specialists is here to help you build the future.
@@ -811,12 +833,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <Card className="text-center p-8 bg-gray-800/50 backdrop-blur border border-cyan-500/20 hover:border-cyan-500/40 transition-all hover:shadow-lg hover:shadow-cyan-500/10">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-cyan-500/25">
+            <Card className="text-center p-8 bg-gray-800/50 backdrop-blur border border-red-500/20 hover:border-red-500/40 transition-all hover:shadow-lg hover:shadow-red-500/10">
+              <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-500/25">
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Email Us</h3>
-              <p className="text-cyan-400 font-medium">m3solutions@gmail.com</p>
+              <p className="text-red-400 font-medium">m3solutions@gmail.com</p>
               <p className="text-gray-400 text-sm mt-2">24/7 Response Guarantee</p>
             </Card>
 
@@ -852,7 +874,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-lg px-8 py-4 shadow-lg shadow-cyan-500/25"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-lg text-white px-8 py-4 shadow-lg shadow-red-500/25"
               >
                 Schedule Tech Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -860,7 +882,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-lg px-8 py-4 border-2 border-cyan-500/30 hover:bg-cyan-500/10 bg-transparent text-cyan-400 hover:text-cyan-300"
+                className="text-lg px-8 py-4 border-2 border-red-500/30 hover:bg-red-500/10 bg-transparent text-red-400 hover:text-red-300"
               >
                 Request System Demo
               </Button>
@@ -870,21 +892,21 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-700">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Build the Future?</h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-red-100 mb-8 max-w-3xl mx-auto">
             Join the digital revolution. Transform your business with cutting-edge technology solutions that deliver
             measurable results and sustainable growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 text-lg px-8 py-4 shadow-lg">
+            <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100 text-lg px-8 py-4 shadow-lg">
               Start Digital Transformation
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-cyan-600 text-lg px-8 py-4 bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-red-600 text-lg px-8 py-4 bg-transparent"
             >
               Explore Solutions
             </Button>
@@ -898,10 +920,10 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/25">
+                <div className="w-8 h-8 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-lg shadow-red-500/25">
                   <Zap className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">
                   LifestyleERP
                 </span>
               </div>
@@ -910,38 +932,38 @@ export default function HomePage() {
                 transformation.
               </p>
               <div className="flex space-x-4">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors cursor-pointer border border-gray-700">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors cursor-pointer border border-gray-700">
                   <span className="text-sm">f</span>
                 </div>
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors cursor-pointer border border-gray-700">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors cursor-pointer border border-gray-700">
                   <span className="text-sm">t</span>
                 </div>
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-cyan-600 transition-colors cursor-pointer border border-gray-700">
+                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors cursor-pointer border border-gray-700">
                   <span className="text-sm">in</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-cyan-400">Solutions</h3>
+              <h3 className="text-lg font-semibold mb-4 text-red-400">Solutions</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Enterprise ERP
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Cybersecurity
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Digital Marketing
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Mobile Applications
                   </Link>
                 </li>
@@ -949,25 +971,25 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-cyan-400">Industries</h3>
+              <h3 className="text-lg font-semibold mb-4 text-red-400">Industries</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Fashion & Retail
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Restaurants & Hospitality
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     Lifestyle Brands
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-cyan-400 transition-colors">
+                  <Link href="#" className="hover:text-red-400 transition-colors">
                     E-commerce Platforms
                   </Link>
                 </li>
@@ -975,22 +997,22 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-cyan-400">Connect</h3>
+              <h3 className="text-lg font-semibold mb-4 text-red-400">Connect</h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center">
-                  <Mail className="w-4 h-4 mr-2 text-cyan-400" />
+                  <Mail className="w-4 h-4 mr-2 text-red-400" />
                   m3solution@gmail.com
                 </li>
                 <li className="flex items-center">
-                  <Phone className="w-4 h-4 mr-2 text-cyan-400" />
+                  <Phone className="w-4 h-4 mr-2 text-red-400" />
                   +8801521430255
                 </li>
                 <li className="flex items-center">
-                  <MapPin className="w-4 h-4 mr-2 text-cyan-400" />
+                  <MapPin className="w-4 h-4 mr-2 text-red-400" />
                   Dhaka, Bangladesh
                 </li>
                 <li className="flex items-center">
-                  <Clock className="w-4 h-4 mr-2 text-cyan-400" />
+                  <Clock className="w-4 h-4 mr-2 text-red-400" />
                   24/7 Support Available
                 </li>
               </ul>
